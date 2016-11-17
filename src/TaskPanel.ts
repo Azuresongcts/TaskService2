@@ -48,7 +48,6 @@ class TaskPanel implements Observer {
 	private buttonTextFieldX = this.buttonX + 5;
 	private buttonTextFieldY = this.buttonY + 10;
 	private buttonTextFieldWidth = 120;
-
 	private buttonTextFieldColor = 0xFFFAFA;
 
 

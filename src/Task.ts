@@ -5,6 +5,8 @@ class Task {
     status: TaskStatus;
     fromNpcId: string;
     toNpcId: string;
+    total:number;
+    condition:TaskCondition;
     public constructor(id, name, desc, status, fromNpcID, toNpcId) {
         this.id=id;
         this.name=name;

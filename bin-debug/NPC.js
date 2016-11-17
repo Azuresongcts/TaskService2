@@ -6,7 +6,7 @@ var emojiimage = {
     UNACCEPTABLEimage: "UNACCEPTABLE_png"
 };
 var NPC = (function () {
-    function NPC(npcId, npcName, taskService, NPCtalkpanel) {
+    function NPC(npcId, npcName, taskService, NPCtalkpanel, mockkillmonsterpanel) {
         this.tileSize = 64;
         this.emojiX = 0;
         this.emojiY = 64;

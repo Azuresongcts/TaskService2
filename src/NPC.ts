@@ -34,8 +34,9 @@ class NPC implements Observer {
     taskDuringState: State;
     taskStateMachine: StateMachine;
     dialoguePanel:DialoguePanel;
+    mockkillmosterbutton:MockKillMonsterButton;
 
-    public constructor(npcId: string, npcName: string, taskService,NPCtalkpanel:DialoguePanel) {
+    public constructor(npcId: string, npcName: string, taskService,NPCtalkpanel:DialoguePanel,mockkillmonsterpanel:MockKillMonsterButton) {
         this.npcStage = new egret.DisplayObjectContainer();
         this.npcStageShape = new egret.Shape();
         this.emoji = new egret.Bitmap();
