@@ -7,11 +7,27 @@ class NPCTalkTaskCondition {
     }
 }
 class TaskCondition {
+    onAccept(task: Task) {
 
-}
-class TaskConditionContext{
-    
-}
-class KillMonsterTaskCondition{
+    }
+    onSubmit(task: Task) {
 
+    }
+}
+class TaskConditionContext {
+    get current(){
+        return status;
+    }
+    set current(task){
+
+
+    }
+}
+class KillMonsterTaskCondition {
+    onAccept(task: Task) {
+
+    }
+    _onSubmit(task: Task) {
+
+    }
 }

@@ -6,7 +6,16 @@ class Task {
     fromNpcId: string;
     toNpcId: string;
     total:number;
-    condition:TaskCondition;
+    private condition:TaskCondition;
+    OnAccept(task){
+
+    }
+    onSubmit(task){
+        
+    }
+    private checkStatus(){
+        
+    }
     public constructor(id, name, desc, status, fromNpcID, toNpcId) {
         this.id=id;
         this.name=name;
