@@ -1,4 +1,4 @@
-class Task {
+class Task implements TaskCondition{
     id: string;
     name: string;
     desc: string;
@@ -7,11 +7,11 @@ class Task {
     toNpcId: string;
     total:number;
     private condition:TaskCondition;
-    OnAccept(task){
+    onAccept(task){
 
     }
     onSubmit(task){
-        
+
     }
     private checkStatus(){
         

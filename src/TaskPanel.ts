@@ -32,7 +32,7 @@ class TaskPanel implements Observer {
 	private taskInformationTextFieldText = "";
 	private taskInformationTextFieldX = 10;
 	private taskInformationTextFieldY = 100;
-	private taskInformationFieldWidth = 180;
+	private taskInformationFieldWidth = 400;
 	private taskInformationTextFieldColor = 0x000000;
 
 	private button: egret.DisplayObjectContainer;

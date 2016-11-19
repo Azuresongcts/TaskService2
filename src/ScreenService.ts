@@ -1,3 +1,5 @@
-notify(){
-    
+class ScreenService {
+    notify() {
+
+    }
 }

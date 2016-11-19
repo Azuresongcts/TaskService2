@@ -29,6 +29,9 @@ class MockKillMonsterButton {
     private buttonTextFieldWidth = 220;
     private buttonTextFieldColor = 0xFFFAFA;
 
+    public monsterValue = 0;
+
+
     public constructor(stage: egret.DisplayObjectContainer, taskService: TaskService) {
         this.stage = stage;
         this.taskService = taskService;
@@ -82,10 +85,16 @@ class MockKillMonsterButton {
                 break;
 
             case TaskStatus.DURING:
+                this.monsterValue++;
+                console.log(this.monsterValue);
+                if(this.monsterValue==10){
+                    this.taskService.canFinish(this.currentTaskId);
+                }
                 break;
 
 
             case TaskStatus.CAN_SUBMIT:
+                this.monsterValue = 0;
                 break;
 
             default:

@@ -95,7 +95,7 @@ var NPC = (function () {
     p.onNpcClick = function (e, task, npcid) {
         if (task === void 0) { task = this.task; }
         if (npcid === void 0) { npcid = this.npcId; }
-        this.taskService.checkTaskRules(task, npcid, this.dialoguePanel);
+        this.taskService.checkStatus(task, npcid, this.dialoguePanel);
     };
     p.onChange = function (task) {
         this.task = task;

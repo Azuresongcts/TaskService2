@@ -15,6 +15,7 @@ var MockKillMonsterButton = (function () {
         this.buttonTextFieldY = this.buttonY + 10;
         this.buttonTextFieldWidth = 220;
         this.buttonTextFieldColor = 0xFFFAFA;
+        this.monsterValue = 0;
         this.stage = stage;
         this.taskService = taskService;
         this.taskService.Attach(this, "MockKillMonsterButton");
@@ -62,8 +63,14 @@ var MockKillMonsterButton = (function () {
             case TaskStatus.ACCEPTABLE:
                 break;
             case TaskStatus.DURING:
+                this.monsterValue++;
+                console.log(this.monsterValue);
+                if (this.monsterValue == 10) {
+                    this.taskService.canFinish(this.currentTaskId);
+                }
                 break;
             case TaskStatus.CAN_SUBMIT:
+                this.monsterValue = 0;
                 break;
             default:
         }
